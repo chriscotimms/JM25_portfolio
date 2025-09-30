@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* --- NEW STYLES FOR THE CLICKABLE AREA --- */
+
+/* This makes the link cover the entire container */
+.video-click-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1; /* Ensures it's on top of the video */
+    cursor: pointer; /* Changes the mouse to a pointer on hover */
+}
+
+/* Provides a clear focus outline for keyboard users */
+.video-click-area:focus {
+    outline: 4px solid #005fcc;
+    outline-offset: -4px; /* Pulls the outline inside the viewport */
+}
+
+/* This class hides text visually but keeps it for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}       

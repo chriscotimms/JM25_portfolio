@@ -1,0 +1,147 @@
+/* --- 1. Main Page Layout --- */
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.menu-container {
+    width: 200px;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    padding: 0px; 
+    box-sizing: border-box; 
+}
+
+/*main content area */
+.content-container {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-link {
+  color: white;
+  display: inline-block;
+  width: 500px;
+}
+
+.image-container {
+  position:relative;
+}
+
+.image-container img {
+  display:block;
+  width: 100%;
+  height: auto;
+}
+
+.image-text-overlay {
+  position: absolute;
+  top: 0;       
+  left: 0;            
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;  
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.image-container:hover .image-text-overlay {
+  opacity: 1;
+}
+
+
+/* --- 2. Accordion Menu Styling --- */
+
+.accordion-details {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.accordion-summary {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    margin: 0; 
+    margin-bottom: 10px; 
+    width: 100%;
+    text-align: left;
+    font-size: 1.7em;
+    list-style: none;
+}
+
+.accordion-summary:hover {
+  background-color: #97cbff;
+}
+
+.accordion-content {
+  padding: 0px 0px;
+}
+
+.accordion-content a {
+  display: block;
+  padding: 0px;
+  font-size: 1.2em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.accordion-content a:hover {
+    background-color: #a1d0ff;
+}
+
+
+/* --- 3. Responsive Styles for Mobile --- */
+/* This block of code will only run on screens 768px or smaller */
+
+@media (max-width: 768px) {
+
+  /* Change the body's flex direction to stack items vertically */
+  body {
+    flex-direction: column;
+  }
+
+  /* Make the menu container take the full width and a natural height */
+  .menu-container {
+    width: 100%;       /* Occupy the full screen width */
+    height: auto;        /* Let height be determined by its content */
+    border-right: none;  /* Remove the border since it's no longer a sidebar */
+    border-bottom: 1px solid #dee2e6; /* Add a bottom border instead */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+
+  /* Adjust padding for the content area on smaller screens */
+  .content-container {
+    padding: 10px;
+  }
+}
+
+
+
+
