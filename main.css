@@ -29,14 +29,50 @@ p {
 
 /*main content area */
 .content-container {
-    flex-grow: 1;
-    padding: 10px;
-    background-color: blue;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+    gap: 50px;
+    padding: 1rem;
 }
+
+.content {
+  background-color: blueviolet;
+}
+
+.content:nth-child(3n+1) {
+  grid-row: span 1; 
+  grid-column: span 1;
+  justify-self:start;
+  align-self:start;
+  margin-right:50px;
+  z-index: 1;
+  min-height: 600px;
+}
+
+.content:nth-child(3n+2) {
+  grid-row: span 2; 
+  grid-column: span 1;
+  justify-self:start;
+  align-self:center;
+  z-index: 1;
+  min-height: 600px;
+}
+
+.content:nth-child(3n) {
+  grid-row: span 1; 
+  grid-column: span 1;
+  justify-self:start;
+  align-self:center;
+  z-index: 1;
+  min-height: 500px; 
+}
+
+
+
+
+
+
 
 .image-link {
   color: white;
