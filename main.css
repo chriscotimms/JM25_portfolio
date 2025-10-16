@@ -1,4 +1,5 @@
 /* --- 1. Main Page Layout --- */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
     display: flex;
@@ -7,16 +8,30 @@ body {
     min-height: 100vh;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 a {
     text-decoration: none;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.0em;
 }
 
 p {
     font-size: 1.3em;
+}
+
+p.i {
+  font-style: italic;
+}
+
+p.s {
+  font-size: 1.1em;
 }
 
 .menu-container {
@@ -28,46 +43,214 @@ p {
 }
 
 /*main content area */
-.content-container {
-    width:100%;
+.content-container-about {
+    flex: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
-    gap: 50px;
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
 }
 
-.content {
-  background-color: blueviolet;
+
+.content-container {
+    flex: 1;
 }
 
-.content:nth-child(3n+1) {
+
+
+
+
+
+.contact {
+  background-image: url(/pages/about/SWIM_DavidDale.jpg);
+  min-width: 100%;
+  display:grid;
+  grid-template-columns: 1fr 8fr 30fr;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  grid-column: 2/3;
+  padding: 3rem;
+  background-color: #00065e;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+.contact-text a {
+  color: rgb(255, 255, 255);
+}
+
+
+
+#domtitles {
   grid-row: span 1; 
-  grid-column: span 1;
+  grid-column: span 3;
   justify-self:start;
   align-self:start;
-  margin-right:50px;
+  margin-left:50px;
   z-index: 1;
-  min-height: 600px;
+  width: 350px;
 }
 
-.content:nth-child(3n+2) {
+#spivak-rub {   
   grid-row: span 2; 
-  grid-column: span 1;
+  grid-column: span 3;
+  justify-self:center;
+  align-self:center;
+  margin-top:100px;
+  margin-left:50px;
+  z-index: 1;
+  width: 500px; 
+}
+
+#swivel-knot {   
+  grid-row: span 2; 
+  grid-column: span 3;
+  justify-self:end;
+  align-self:start;
+  margin-top:30px;
+  z-index: 1;
+  width: 300px; 
+}
+
+#bent-head {   
+  grid-row: span 4; 
+  grid-column: span 4;
+  justify-self:start; 
+  align-self:start;
+  margin-top:70px;
+  margin-left:0px;
+  z-index: 1;
+  width: 400px; 
+}
+
+#how-to-win {   
+  grid-row: span 3; 
+  grid-column: span 3;
+  justify-self:center;
+  align-self:center;
+  z-index: 1;
+  width: 200px;
+}
+
+#workers-fingers {   
+  grid-row: span 2; 
+  grid-column: span 3;
+  justify-self:end;
+  align-self:end;
+  margin: 100px;
+  z-index: 1;
+  width: 400px;
+}
+
+#swim {   
+  grid-row: span 3; 
+  grid-column: span 3;
+  justify-self:start;
+  align-self:start;
+  margin:100px;
+  z-index: 1;
+  width: 600px;
+}
+
+#we-are-vandals {   
+  grid-row: span 3; 
+  grid-column: span 3;
+  justify-self:center;
+  align-self:center;
+  z-index: 1;
+  width: 450px;
+}
+
+#gut-house {  
+  grid-row: span 3; 
+  grid-column: span 3; 
+  justify-self:end;
+  align-self:end;
+  z-index: 1;
+  width: 350px;
+   margin:100px;
+
+}
+
+#sonic-gut-meditations {   
+  grid-row: span 3; 
+  grid-column: span 3;
+  justify-self:center;
+  align-self:center;
+  margin-left: 50px;
+  z-index: 1;
+  width: 350px;
+}
+
+#meatmouth {   
+  grid-row: span 3; 
+  grid-column: span 4;
   justify-self:start;
   align-self:center;
   z-index: 1;
-  min-height: 600px;
+  width: 350px;
 }
 
-.content:nth-child(3n) {
-  grid-row: span 1; 
-  grid-column: span 1;
-  justify-self:start;
+#paperwork-iilwimi-lipsing {   
+  grid-row: span 3; 
+  grid-column: span 3;
+  justify-self:center;
   align-self:center;
   z-index: 1;
-  min-height: 500px; 
+  width: 250px;
+  margin:50px;
 }
 
+#a-scene-with-human-furniture { 
+  grid-row: span 3; 
+  grid-column: span 3;  
+  justify-self:center;
+  align-self:center;
+  margin:200px;
+  z-index: 1;
+  width: 600px;
+}
+
+#rope-umkhando-and-the-tongue { 
+  grid-row: span 2; 
+  grid-column: span 3;  
+  justify-self:center;
+  align-self:center;
+  z-index: 1;
+  width: 400px;
+  margin:100px;
+}
+
+#a-scene-with-human-furniture { 
+  grid-row: span 3; 
+  grid-column: span 3;  
+  justify-self:center;
+  align-self:center;
+  margin-top:0px;
+  z-index: 1;
+  width: 500px;
+}
+
+#scripts-for-page-and-performer { 
+  grid-row: span 3; 
+  grid-column: span 3;  
+  justify-self:center;
+  align-self:center;
+  margin:0px;
+  z-index: 1;
+  width: 500px;
+}
+
+#this-machine { 
+  grid-row: span 2; 
+  grid-column: span 4;  
+  justify-self:center;
+  align-self:center;
+  z-index: 1;
+  width: 300px;
+  margin:100px;
+}
 
 
 
@@ -151,6 +334,15 @@ p {
 .accordion-content a:hover {
     background-color: #a1d0ff;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* --- 3. Responsive Styles for Mobile --- */
