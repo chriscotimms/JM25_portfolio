@@ -7,12 +7,12 @@ body {
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
-
+/* 
 img {
   width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 a {
     text-decoration: none;
@@ -53,8 +53,6 @@ p.s {
 .content-container {
     flex: 1;
 }
-
-
 
 
 
