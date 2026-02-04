@@ -49,13 +49,20 @@ p.s {
     grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
 }
 
-
+/* 
 .content-container {
     flex: 1;
+} */
+
+.content-container {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    padding: 2rem;
+    font-size: 1.2rem;
 }
-
-
-
 
 .contact {
   background-image: url(/pages/about/SWIM_DavidDale.jpg);
@@ -81,173 +88,123 @@ p.s {
 
 
 #domtitles {
-  grid-row: span 1; 
-  grid-column: span 3;
-  justify-self:start;
-  align-self:start;
-  margin-left:50px;
+  top: 20px;
+  left: 380px;
   z-index: 1;
-  width: 350px;
+  width: 390px;
 }
 
 #spivak-rub {   
-  grid-row: span 2; 
-  grid-column: span 3;
-  justify-self:center;
-  align-self:center;
-  margin-top:100px;
-  margin-left:50px;
+  top: 300px;
+  left: 200px;
   z-index: 1;
   width: 500px; 
 }
 
 #swivel-knot {   
-  grid-row: span 2; 
-  grid-column: span 3;
-  justify-self:end;
-  align-self:start;
-  margin-top:30px;
+top: 200px;
+  left: 800px;
   z-index: 1;
   width: 300px; 
 }
 
 #bent-head {   
-  grid-row: span 4; 
-  grid-column: span 4;
-  justify-self:start; 
-  align-self:start;
-  margin-top:70px;
-  margin-left:0px;
+  top: 100px;
+  left: 1150px;
   z-index: 1;
   width: 400px; 
 }
 
 #how-to-win {   
-  grid-row: span 3; 
-  grid-column: span 3;
-  justify-self:center;
-  align-self:center;
+  top: 700px;
+  left: 200px;
   z-index: 1;
   width: 200px;
 }
 
 #workers-fingers {   
-  grid-row: span 2; 
-  grid-column: span 3;
-  justify-self:end;
-  align-self:end;
-  margin: 100px;
+top: 700px;
+  left: 500px;
   z-index: 1;
   width: 400px;
 }
 
 #swim {   
-  grid-row: span 3; 
-  grid-column: span 3;
-  justify-self:start;
-  align-self:start;
-  margin:100px;
+top: 630px;
+  left: 1000px;
   z-index: 1;
   width: 600px;
 }
 
 #we-are-vandals {   
-  grid-row: span 3; 
-  grid-column: span 3;
-  justify-self:center;
-  align-self:center;
+top: 1060px;
+  left: 350px;
   z-index: 1;
   width: 450px;
 }
 
 #gut-house {  
-  grid-row: span 3; 
-  grid-column: span 3; 
-  justify-self:end;
-  align-self:end;
+top: 1150px;
+  left: 860px;
   z-index: 1;
-  width: 350px;
-   margin:100px;
+  width: 400px;
 
 }
 
 #sonic-gut-meditations {   
-  grid-row: span 3; 
-  grid-column: span 3;
-  justify-self:center;
-  align-self:center;
-  margin-left: 50px;
+  top: 1200px;
+  left: 1300px;
   z-index: 1;
   width: 350px;
 }
 
 #meatmouth {   
-  grid-row: span 3; 
-  grid-column: span 4;
-  justify-self:start;
-  align-self:center;
+  top: 1430px;
+  left: 950px;
   z-index: 1;
   width: 350px;
 }
 
 #paperwork-iilwimi-lipsing {   
-  grid-row: span 3; 
-  grid-column: span 3;
-  justify-self:center;
-  align-self:center;
+top: 1700px;
+  left: 850px;
   z-index: 1;
   width: 250px;
-  margin:50px;
 }
 
 #a-scene-with-human-furniture { 
-  grid-row: span 3; 
-  grid-column: span 3;  
-  justify-self:center;
-  align-self:center;
-  margin:200px;
+  top: 1600px;
+  left: 800px;
   z-index: 1;
-  width: 600px;
+  width: 250px;
 }
 
 #rope-umkhando-and-the-tongue { 
-  grid-row: span 2; 
-  grid-column: span 3;  
-  justify-self:center;
-  align-self:center;
+top: 1950px;
+  left: 250px;
   z-index: 1;
   width: 400px;
-  margin:100px;
 }
 
 #a-scene-with-human-furniture { 
-  grid-row: span 3; 
-  grid-column: span 3;  
-  justify-self:center;
-  align-self:center;
-  margin-top:0px;
+top: 1600px;
+  left: 200px;
   z-index: 1;
   width: 500px;
 }
 
 #scripts-for-page-and-performer { 
-  grid-row: span 3; 
-  grid-column: span 3;  
-  justify-self:center;
-  align-self:center;
-  margin:0px;
+top: 2200px;
+  left: 800px;
   z-index: 1;
   width: 500px;
 }
 
 #this-machine { 
-  grid-row: span 2; 
-  grid-column: span 4;  
-  justify-self:center;
-  align-self:center;
+top: 2200px;
+  left: 450px;
   z-index: 1;
   width: 300px;
-  margin:100px;
 }
 
 
@@ -259,6 +216,7 @@ p.s {
   color: white;
   display: inline-block;
   width: 500px;
+  position: absolute;
 }
 
 .image-container {
@@ -336,15 +294,242 @@ p.s {
 
 
 
+@media (min-width:1100px) and (max-width: 1500px) {
+
+  #domtitles {
+    top: 10px;
+    left: 280px;
+    z-index: 1;
+    width: 390px;
+  }
+
+  #spivak-rub {   
+    top: 300px;
+    left: 200px;
+    z-index: 1;
+    width: 500px; 
+  }
+
+  #swivel-knot {   
+  top: 150px;
+    left: 710px;
+    z-index: 1;
+    width: 300px; 
+  }
+
+  #bent-head {   
+    top: 710px;
+    left: 220px;
+    z-index: 1;
+    width: 400px; 
+  }
+
+  #how-to-win {   
+    top: 1130px;
+    left: 200px;
+    z-index: 1;
+    width: 200px;
+  }
+
+  #workers-fingers {   
+  top: 680px;
+    left: 640px;
+    z-index: 1;
+    width: 400px;
+  }
+
+  #swim {   
+  top: 980px;
+    left: 650px;
+    z-index: 1;
+    width: 600px;
+  }
+
+  #we-are-vandals {   
+  top: 1460px;
+    left: 250px;
+    z-index: 1;
+    width: 450px;
+  }
+
+  #gut-house {  
+  top: 1400px;
+    left: 740px;
+    z-index: 1;
+    width: 400px;
+
+  }
+
+  #sonic-gut-meditations {   
+    top: 2000px;
+    left: 750px;
+    z-index: 1;
+    width: 350px;
+  }
+
+  #meatmouth {   
+    top: 1730px;
+    left: 830px;
+    z-index: 1;
+    width: 350px;
+  }
+
+  #paperwork-iilwimi-lipsing {   
+  top: 2280px;
+    left: 290px;
+    z-index: 1;
+    width: 250px;
+  }
+
+  #a-scene-with-human-furniture { 
+  top: 1900px;
+    left: 200px;
+    z-index: 1;
+    width: 500px;
+  }
+
+  #rope-umkhando-and-the-tongue { 
+  top: 2650px;
+    left: 210px;
+    z-index: 1;
+    width: 400px;
+  }
+
+  #scripts-for-page-and-performer { 
+  top: 3200px;
+    left: 700px;
+    z-index: 1;
+    width: 500px;
+  }
+
+  #this-machine { 
+  top: 2900px;
+    left: 300px;
+    z-index: 1;
+    width: 300px;
+  }
+ 
+}
 
 
+@media (min-width:769px) and (max-width: 1099px) {
+
+  #domtitles {
+    top: 10px;
+    left: 280px;
+    z-index: 1;
+    width: 390px;
+  }
+
+  #spivak-rub {   
+    top: 260px;
+    left: 200px;
+    z-index: 1;
+    width: 500px; 
+  }
+
+  #swivel-knot {   
+  top: 650px;
+    left: 210px;
+    z-index: 1;
+    width: 300px; 
+  }
+
+  #bent-head {   
+    top: 1100px;
+    left: 260px;
+    z-index: 1;
+    width: 400px; 
+  }
+
+  #how-to-win {   
+    top: 1500px;
+    left: 400px;
+    z-index: 1;
+    width: 200px;
+  }
+
+  #workers-fingers {   
+  top: 1850px;
+    left: 240px;
+    z-index: 1;
+    width: 400px;
+  }
+
+  #swim {   
+  top: 2200px;
+    left: 200px;
+    z-index: 1;
+    width: 600px;
+  }
+
+  #we-are-vandals {   
+  top: 2650px;
+    left: 250px;
+    z-index: 1;
+    width: 450px;
+  }
+
+  #gut-house {  
+  top: 3000px;
+    left: 240px;
+    z-index: 1;
+    width: 400px;
+
+  }
+
+  #sonic-gut-meditations {   
+    top: 3300px;
+    left: 250px;
+    z-index: 1;
+    width: 350px;
+  }
+
+  #meatmouth {   
+    top: 4500px;
+    left: 280px;
+    z-index: 1;
+    width: 350px;
+  }
+
+  #paperwork-iilwimi-lipsing {   
+  top: 4720px;
+    left: 330px;
+    z-index: 1;
+    width: 250px;
+  }
+
+  #a-scene-with-human-furniture { 
+  top: 5100px;
+    left: 200px;
+    z-index: 1;
+    width: 500px;
+  }
+
+  #rope-umkhando-and-the-tongue { 
+  top: 5460px;
+    left: 240px;
+    z-index: 1;
+    width: 400px;
+  }
+
+  #scripts-for-page-and-performer { 
+  top: 5940px;
+    left: 200px;
+    z-index: 1;
+    width: 500px;
+  }
+
+  #this-machine { 
+  top: 5720px;
+    left: 280px;
+    z-index: 1;
+    width: 300px;
+  }
+ 
+}
 
 
-
-
-
-/* --- 3. Responsive Styles for Mobile --- */
-/* This block of code will only run on screens 768px or smaller */
 
 @media (max-width: 768px) {
 
@@ -353,6 +538,14 @@ p.s {
     flex-direction: column;
   }
 
+
+
+  .content-container-about {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+  } 
+
   /* Make the menu container take the full width and a natural height */
   .menu-container {
     width: 100%;       /* Occupy the full screen width */
@@ -360,11 +553,117 @@ p.s {
     border-right: none;  /* Remove the border since it's no longer a sidebar */
     border-bottom: 1px solid #dee2e6; /* Add a bottom border instead */
     box-sizing: border-box; /* Ensures padding is included in the width */
+    font-size: 1.7rem;
   }
 
   /* Adjust padding for the content area on smaller screens */
   .content-container {
     padding: 10px;
+  }
+
+.image-link {
+  color: white;
+  display: inline-block;
+  width: 500px;
+  position: relative;
+}
+
+    #domtitles {
+    top: 10px;
+    left: 80px;
+    width: 390px;
+  }
+
+  #spivak-rub {   
+    top: 60px;
+    left: 0px;
+    width: 500px; 
+  }
+
+  #swivel-knot {   
+  top: 90px;
+    left: 10px;
+
+    width: 300px; 
+  }
+
+  #bent-head {   
+    top: 100px;
+    left: 60px;
+    width: 400px; 
+  }
+
+  #how-to-win {   
+    top: 150px;
+    left: 100px;
+    width: 200px;
+  }
+
+  #workers-fingers {   
+  top: 150px;
+    left: 40px;
+    width: 400px;
+  }
+
+  #swim {   
+  top: 200px;
+    left: 0px;
+    width: 600px;
+  }
+
+  #we-are-vandals {   
+  top: 250px;
+    left: 50px;
+    width: 450px;
+  }
+
+  #gut-house {  
+    top: 300px;
+    left: 80px;
+    width: 400px;
+
+  }
+
+  #sonic-gut-meditations {   
+    top: 380px;
+    left: 80px;
+    width: 350px;
+  }
+
+  #meatmouth {   
+    top: 450px;
+    left: 120px;
+    width: 350px;
+  }
+
+  #paperwork-iilwimi-lipsing {   
+    top: 520px;
+    left: 230px;
+    width: 250px;
+  }
+
+  #a-scene-with-human-furniture { 
+    top: 550px;
+    left: 50px;
+    width: 500px;
+  }
+
+  #rope-umkhando-and-the-tongue { 
+    top: 620px;
+    left: 100px;
+    width: 400px;
+  }
+
+  #scripts-for-page-and-performer { 
+    top: 750px;
+    left: 60px;
+    width: 500px;
+  }
+
+  #this-machine { 
+  top: 820px;
+    left: 200px;
+    width: 300px;
   }
 }
 
